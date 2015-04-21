@@ -21,7 +21,7 @@ public class venskabskaede {
 		current = in.readLine();
 		while(current.contains("tvenner")!=true){
 			temp = current.split(" ");
-			graph.addEdge(Integer.parseInt(temp[0]), Integer.parseInt(temp[1]));
+			graph.addEdge(Integer.parseInt(temp[0]), Integer.parseInt(temp[1]), 0);
 			current = in.readLine();
 		}
 		
