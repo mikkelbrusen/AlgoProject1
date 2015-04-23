@@ -66,4 +66,13 @@ public class Graph {
 	public LinkedList<Node>[] getEdges() {
 		return edges;
 	}
+	
+	public boolean contains(int i, int j) {
+		for (Node vertex: edges[i]) {
+			if (vertex.equals(j)) {
+				return true;
+			}
+		}
+		return false;
+	}
 }

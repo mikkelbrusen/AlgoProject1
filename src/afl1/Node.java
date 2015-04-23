@@ -9,6 +9,10 @@ public class Node {
 		this.setKey(key);
 		this.setSat(sat);
 	}
+	
+	public boolean equals(int i) {
+		return key == i;
+	}
 
 	public int getKey() {
 		return key;
